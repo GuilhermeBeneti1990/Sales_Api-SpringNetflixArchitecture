@@ -19,3 +19,14 @@ spring:
     url: jdbc:mysql://localhost:3306/sales?allowPublicKeyRetrieval=true&sslMode=DISABLED&useSSL=false&serverTimezone=UTC
     username: root
     password: root
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin
+
+products-api:
+  rabbitmq:
+    exchange: products-api.exchange
+    queue: products-api.queue
