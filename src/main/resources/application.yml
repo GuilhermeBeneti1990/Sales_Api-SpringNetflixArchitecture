@@ -30,3 +30,8 @@ products-api:
   rabbitmq:
     exchange: products-api.exchange
     queue: products-api.queue
+
+security:
+  jwt:
+    token:
+      secret-key: jacksparrow
